@@ -1,0 +1,92 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>SQL-injection-Demo_</groupId>
+  <artifactId>SQL-injection-Demo_</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+  
+  	<dependencies>
+	  
+	  
+	  <!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-core</artifactId>
+		    <version>6.1.0</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-context</artifactId>
+		    <version>6.1.0</version>
+		</dependency>
+		
+		<!--oracle driver jar-->
+		<!-- https://mvnrepository.com/artifact/com.oracle.database.jdbc/ojdbc10 -->
+		<dependency>
+    		<groupId>com.oracle.database.jdbc</groupId>
+    		<artifactId>ojdbc10</artifactId>
+   			<version>19.21.0.0</version>
+		</dependency>
+		
+		<!--spring jpa/orm dependency-->
+		<!-- https://mvnrepository.com/artifact/org.springframework/spring-orm -->
+		<dependency>
+  		  	<groupId>org.springframework</groupId>
+   			<artifactId>spring-orm</artifactId>
+    		<version>6.1.0</version>
+		</dependency>
+		
+		<!--Hybernate core maven dependecy-->
+		<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+		<dependency>
+		    <groupId>org.hibernate</groupId>
+		    <artifactId>hibernate-core</artifactId>
+		    <version>6.2.6.Final</version>
+		    <type>pom</type>
+		</dependency>
+		
+		<!--spring data jpa dependency-->
+		<!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-jpa -->
+		<dependency>
+		    <groupId>org.springframework.data</groupId>
+		    <artifactId>spring-data-jpa</artifactId>
+		    <version>3.1.2</version>
+		</dependency>
+		
+		
+
+		    <dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-java</artifactId>
+        <version>4.4.0</version>
+    		</dependency>
+
+
+		    <dependency>
+		    	<groupId>spring-mvc-demo</groupId>
+		    	<artifactId>spring-mvc-demo</artifactId>
+		    	<version>0.0.1-SNAPSHOT</version>
+		    </dependency>
+		    
+		    
+		    
+  	</dependencies>
+  
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+        <configuration>
+          <release>17</release>
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>3.2.3</version>
+      </plugin>
+    </plugins>
+  </build>
+</project>
